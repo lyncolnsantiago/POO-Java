@@ -35,4 +35,9 @@ public class Shark extends Fish {
     public void die() {
         System.out.println("Tubarão morrendo...");
     }
+
+    @Override
+    public void swim() {
+        System.out.println("Tubarão nadando...");
+    }
 }

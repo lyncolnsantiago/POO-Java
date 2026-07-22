@@ -1,4 +1,4 @@
 package sample.animal;
 
-public abstract class Fish extends Chordate {
+public abstract class Fish extends Chordate implements Aquatic {
 }

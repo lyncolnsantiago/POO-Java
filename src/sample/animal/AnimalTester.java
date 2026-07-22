@@ -20,5 +20,6 @@ public class AnimalTester {
         shark1.grows();
         shark1.reproduces();
         shark1.die();
+        shark1.swim();
     }
 }

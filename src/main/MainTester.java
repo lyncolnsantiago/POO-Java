@@ -24,5 +24,9 @@ public class MainTester {
 
         ac.sayHello();
         cc.sayHello();
+
+        System.out.println(ac.INTERFACE_VAR);
+        ac.interfaceMethod1();
+        ac.interfaceMethod2();
     }
 }

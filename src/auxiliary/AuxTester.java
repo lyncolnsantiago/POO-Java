@@ -1,9 +1,8 @@
 package auxiliary;
 
-import main.AbstClass;
-import main.ConcClass;
-import main.ConcClass1;
-import main.ConcClass2;
+import main.*;
+
+import javax.tools.Tool;
 
 public class AuxTester {
     public static void main(String[] args) {
@@ -35,5 +34,47 @@ public class AuxTester {
 
         ac.sayHi();
         cc.sayHi();
+
+        AuxClass aux = new AuxClass();
+        System.out.println(aux.INTERFACE_VAR);
+
+        ac.interfaceMethod1();
+        cc.interfaceMethod2();
+        aux.interfaceMethod2();
+        ac.interfaceMethod1();
+        cc.interfaceMethod2();
+        aux.interfaceMethod2();
+
+        //Roteiro 6
+        //Tools t01 = new Tools();
+        Tools t02 = new Tools();
+
+        /*System.out.println(t01.option);
+        System.out.println(t02.option);
+
+        t01.option = 'B';
+        System.out.println(t01.option);
+        System.out.println(t02.option);*/
+
+        Tools.printOption();
+        Tools.option = 'Z';
+        //System.out.println(Tools.option);
+
+        Tools.printOption();
+
+        Tools t01 = new Tools();
+        t01.printAlternative();
+
+        Tools.display("Um texto qualquer!");
+        Tools.display(10, 11);
+        Tools.display(25.0);
+
+        double resultado = Tools.sum(25.84, 48.53);
+
+        System.out.println(Tools.sum(25.84, 48.53));
+
+        //Roteiro 7
+        //ConcClass2 cc3 = new ConcClass2(7890);
+        //ConcClass cc3 = new ConcClass(7890);
     }
 }
