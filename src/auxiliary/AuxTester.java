@@ -2,8 +2,6 @@ package auxiliary;
 
 import main.*;
 
-import javax.tools.Tool;
-
 public class AuxTester {
     public static void main(String[] args) {
         //Roteiro 1
@@ -29,11 +27,14 @@ public class AuxTester {
 
         ac.sayHello();
         cc.sayHello();
-
         cc.originalSayHello();
 
         ac.sayHi();
         cc.sayHi();
+
+        //Roteiro 4
+        System.out.println(ac.INTERFACE_VAR);
+        System.out.println(cc.INTERFACE_VAR);
 
         AuxClass aux = new AuxClass();
         System.out.println(aux.INTERFACE_VAR);
@@ -47,7 +48,7 @@ public class AuxTester {
 
         //Roteiro 6
         //Tools t01 = new Tools();
-        Tools t02 = new Tools();
+        //Tools t02 = new Tools();
 
         /*System.out.println(t01.option);
         System.out.println(t02.option);
@@ -59,7 +60,6 @@ public class AuxTester {
         Tools.printOption();
         Tools.option = 'Z';
         //System.out.println(Tools.option);
-
         Tools.printOption();
 
         Tools t01 = new Tools();
@@ -69,12 +69,23 @@ public class AuxTester {
         Tools.display(10, 11);
         Tools.display(25.0);
 
-        double resultado = Tools.sum(25.84, 48.53);
+        /*double resultado = Tools.sum(25.84, 48.53);
+
+        System.out.println(resultado);*/
 
         System.out.println(Tools.sum(25.84, 48.53));
 
         //Roteiro 7
         //ConcClass2 cc3 = new ConcClass2(7890);
         //ConcClass cc3 = new ConcClass(7890);
+
+        //Roteiro 8
+        Enumeration test = Enumeration.ENUM_OBJECT_1;
+        /*test.value1 = 100;
+        System.out.println(test.value1);*/
+
+        System.out.println(test.name());
+
+        System.out.println(Enumeration.ENUM_OBJECT_2);
     }
 }
